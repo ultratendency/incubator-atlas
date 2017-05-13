@@ -25,7 +25,6 @@ import java.util.Map;
 
 import org.apache.atlas.AtlasException;
 import org.apache.atlas.repository.Constants;
-import org.apache.atlas.repository.RepositoryException;
 import org.apache.atlas.repository.graph.GraphHelper;
 import org.apache.atlas.repository.graphdb.AtlasVertex;
 import org.apache.atlas.typesystem.types.AttributeInfo;

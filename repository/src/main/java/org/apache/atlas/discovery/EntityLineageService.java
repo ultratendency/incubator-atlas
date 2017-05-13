@@ -38,7 +38,6 @@ import org.apache.atlas.util.AtlasGremlinQueryProvider.AtlasGremlinQuery;
 import org.apache.commons.collections.CollectionUtils;
 
 import javax.inject.Inject;
-import javax.script.ScriptException;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;

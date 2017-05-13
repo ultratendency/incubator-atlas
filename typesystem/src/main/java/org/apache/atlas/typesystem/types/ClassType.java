@@ -35,7 +35,6 @@ import org.apache.atlas.typesystem.persistence.AtlasSystemAttributes;
 import org.apache.atlas.typesystem.persistence.Id;
 import org.apache.atlas.typesystem.persistence.ReferenceableInstance;
 import org.apache.atlas.typesystem.persistence.StructInstance;
-import scala.tools.cmd.gen.AnyVals;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;

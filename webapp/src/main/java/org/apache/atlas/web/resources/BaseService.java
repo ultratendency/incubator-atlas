@@ -29,7 +29,6 @@ import org.apache.atlas.catalog.exception.CatalogRuntimeException;
 import org.apache.atlas.catalog.exception.InvalidPayloadException;
 import org.apache.atlas.catalog.exception.InvalidQueryException;
 import org.apache.atlas.catalog.exception.ResourceNotFoundException;
-import org.apache.atlas.repository.graph.AtlasGraphProvider;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

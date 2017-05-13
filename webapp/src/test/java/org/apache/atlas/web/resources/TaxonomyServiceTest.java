@@ -40,7 +40,6 @@ import javax.ws.rs.core.PathSegment;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
 
-import org.apache.atlas.AtlasException;
 import org.apache.atlas.catalog.AtlasTypeSystem;
 import org.apache.atlas.catalog.JsonSerializer;
 import org.apache.atlas.catalog.Request;

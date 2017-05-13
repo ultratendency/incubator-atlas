@@ -18,7 +18,6 @@
 
 package org.apache.atlas.web.resources;
 
-import org.apache.atlas.AtlasException;
 import org.apache.atlas.catalog.BaseRequest;
 import org.apache.atlas.catalog.CollectionRequest;
 import org.apache.atlas.catalog.DefaultTypeSystem;

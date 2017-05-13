@@ -30,7 +30,6 @@ import org.apache.atlas.typesystem.types.Multiplicity;
 import org.apache.atlas.typesystem.types.ObjectGraphWalker;
 
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 
 public class ReplaceIdWithInstance implements ObjectGraphWalker.NodeProcessor {

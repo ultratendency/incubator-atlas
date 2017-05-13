@@ -19,9 +19,6 @@ package org.apache.atlas.repository.util;
 
 import org.apache.atlas.model.SearchFilter;
 import org.apache.atlas.model.TypeCategory;
-import org.apache.atlas.model.typedef.AtlasBaseTypeDef;
-import org.apache.atlas.model.typedef.AtlasClassificationDef;
-import org.apache.atlas.model.typedef.AtlasEntityDef;
 import org.apache.atlas.type.AtlasClassificationType;
 import org.apache.atlas.type.AtlasEntityType;
 import org.apache.atlas.type.AtlasType;

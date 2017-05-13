@@ -20,10 +20,8 @@ import org.apache.commons.lang.StringUtils;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.security.alias.CredentialProvider;
 import org.apache.hadoop.security.alias.CredentialProviderFactory;
-import org.apache.hadoop.security.alias.JavaKeyStoreProvider;
 
 import java.io.Console;
-import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
 
