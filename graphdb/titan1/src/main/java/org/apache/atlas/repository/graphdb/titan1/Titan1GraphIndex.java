@@ -60,7 +60,7 @@ public class Titan1GraphIndex implements AtlasGraphIndex {
     @Override
     public Set<AtlasPropertyKey> getFieldKeys() {
         PropertyKey[] keys = wrapped.getFieldKeys();
-        Set<AtlasPropertyKey> result = new HashSet<AtlasPropertyKey>();
+        Set<AtlasPropertyKey> result = new HashSet<>();
         for(PropertyKey key  : keys) {
             result.add(GraphDbObjectFactory.createPropertyKey(key));
         }

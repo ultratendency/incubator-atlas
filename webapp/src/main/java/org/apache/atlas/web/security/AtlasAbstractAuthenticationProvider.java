@@ -96,7 +96,7 @@ public abstract class AtlasAbstractAuthenticationProvider implements
     }
 
     public static List<GrantedAuthority> getAuthoritiesFromUGI(String userName) {
-        List<GrantedAuthority> grantedAuths = new ArrayList<GrantedAuthority>();
+        List<GrantedAuthority> grantedAuths = new ArrayList<>();
 
         UserGroupInformation ugi = UserGroupInformation.createRemoteUser(userName);
         if (ugi != null) {

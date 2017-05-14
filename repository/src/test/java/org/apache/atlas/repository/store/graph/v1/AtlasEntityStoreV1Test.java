@@ -346,7 +346,7 @@ public class AtlasEntityStoreV1Test {
         init();
         entityStore.createOrUpdate(new AtlasEntityStream(col1WithExtendedInfo), false);
 
-        Map<String, AtlasObjectId> columnsMap = new HashMap<String, AtlasObjectId>();
+        Map<String, AtlasObjectId> columnsMap = new HashMap<>();
         columnsMap.put("col0", AtlasTypeUtil.getAtlasObjectId(col0));
         columnsMap.put("col1", AtlasTypeUtil.getAtlasObjectId(col1));
 

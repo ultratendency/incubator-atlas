@@ -46,7 +46,7 @@ public class TestAtlasObjectIdType {
         Map<Object, Object> invalidObj3 = new HashMap<>();
         Map<Object, Object> invalidObj4 = new HashMap<>();
 
-        Map<String, Object> uniqAttribs = new HashMap<String, Object>();
+        Map<String, Object> uniqAttribs = new HashMap<>();
         uniqAttribs.put("name", "testTypeInstance-1");
 
         // guid

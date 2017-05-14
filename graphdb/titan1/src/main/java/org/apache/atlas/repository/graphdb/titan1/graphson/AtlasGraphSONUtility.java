@@ -199,8 +199,8 @@ public final class AtlasGraphSONUtility {
     private static ObjectNode objectNodeFromElement(final AtlasElement element, final List<String> propertyKeys,
                                                     final AtlasGraphSONMode mode) {
         final AtlasGraphSONUtility graphson = element instanceof AtlasEdge
-                ? new AtlasGraphSONUtility(mode, null, new HashSet<String>(propertyKeys))
-                : new AtlasGraphSONUtility(mode, new HashSet<String>(propertyKeys), null);
+                ? new AtlasGraphSONUtility(mode, null, new HashSet<>(propertyKeys))
+                : new AtlasGraphSONUtility(mode, new HashSet<>(propertyKeys), null);
         return graphson.objectNodeFromElement(element);
     }
 
@@ -338,14 +338,14 @@ public final class AtlasGraphSONUtility {
 
     private static Map<String, Object> createPropertyMap(final AtlasElement element, final List<String> propertyKeys,
                                                          final ElementPropertiesRule rule, final boolean normalized) {
-        final Map<String, Object> map = new HashMap<String, Object>();
+        final Map<String, Object> map = new HashMap<>();
         final List<String> propertyKeyList;
         if (normalized) {
-            final List<String> sorted = new ArrayList<String>(element.getPropertyKeys());
+            final List<String> sorted = new ArrayList<>(element.getPropertyKeys());
             Collections.sort(sorted);
             propertyKeyList = sorted;
         } else {
-            propertyKeyList = new ArrayList<String>(element.getPropertyKeys());
+            propertyKeyList = new ArrayList<>(element.getPropertyKeys());
         }
 
         if (propertyKeys == null) {
@@ -471,7 +471,7 @@ public final class AtlasGraphSONUtility {
     }
 
     private static List<Object> convertArrayToList(final Object value) {
-        final ArrayList<Object> list = new ArrayList<Object>();
+        final ArrayList<Object> list = new ArrayList<>();
         int arrlength = Array.getLength(value);
         for (int i = 0; i < arrlength; i++) {
             Object object = Array.get(value, i);

@@ -121,11 +121,11 @@ public class AtlasElementPropertyConfig {
         final List<String> propertyKeyList;
         if (keys != null) {
             if (normalized) {
-                final List<String> sorted = new ArrayList<String>(keys);
+                final List<String> sorted = new ArrayList<>(keys);
                 Collections.sort(sorted);
                 propertyKeyList = sorted;
             } else {
-                propertyKeyList = new ArrayList<String>(keys);
+                propertyKeyList = new ArrayList<>(keys);
             }
         } else {
             propertyKeyList = null;

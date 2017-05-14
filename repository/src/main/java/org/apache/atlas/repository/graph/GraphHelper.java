@@ -740,7 +740,7 @@ public final class GraphHelper {
 
         //For each attribute, need to figure out what values to search for and which instance(s)
         //those values correspond to.
-        Map<String, AttributeValueMap> map = new HashMap<String, AttributeValueMap>();
+        Map<String, AttributeValueMap> map = new HashMap<>();
 
         for (AttributeInfo attributeInfo : classType.fieldMapping().fields.values()) {
             if (attributeInfo.isUnique) {
@@ -767,7 +767,7 @@ public final class GraphHelper {
         query.has(Constants.ENTITY_TYPE_PROPERTY_KEY, classType.getName());
         query.has(Constants.STATE_PROPERTY_KEY,Id.EntityState.ACTIVE.name());
 
-        List<AtlasGraphQuery> orChildren = new ArrayList<AtlasGraphQuery>();
+        List<AtlasGraphQuery> orChildren = new ArrayList<>();
 
 
         //build up an or expression to find vertices which match at least one of the unique attribute constraints

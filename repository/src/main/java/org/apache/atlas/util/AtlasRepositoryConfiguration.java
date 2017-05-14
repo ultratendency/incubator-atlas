@@ -197,7 +197,7 @@ public class AtlasRepositoryConfiguration {
             }
         }
         if (skippedOperations == null) {
-            skippedOperations = new ArrayList<String>();
+            skippedOperations = new ArrayList<>();
                 String[] skipAuditForOperations = config
                         .getStringArray(AUDIT_EXCLUDED_OPERATIONS);
                 if (skipAuditForOperations != null

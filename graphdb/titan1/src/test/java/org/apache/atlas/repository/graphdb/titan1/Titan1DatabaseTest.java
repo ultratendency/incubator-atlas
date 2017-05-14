@@ -293,7 +293,7 @@ public class Titan1DatabaseTest {
 
         AtlasGraph<V, E> graph = getGraph();
         AtlasVertex<V, E> vertex = graph.addVertex();
-        List<String> colorsToSet = new ArrayList<String>();
+        List<String> colorsToSet = new ArrayList<>();
         colorsToSet.add("red");
         colorsToSet.add("blue");
         colorsToSet.add("green");
@@ -420,7 +420,7 @@ public class Titan1DatabaseTest {
     }
 
     private static <T> List<T> toList(Iterable<? extends T> iterable) {
-        List<T> result = new ArrayList<T>();
+        List<T> result = new ArrayList<>();
         for (T item : iterable) {
             result.add(item);
         }

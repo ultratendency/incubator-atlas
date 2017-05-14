@@ -207,7 +207,7 @@ public class Titan1Graph implements AtlasGraph<Titan1Vertex, Titan1Edge> {
 
         TitanManagement mgmt = getGraph().openManagement();
         Iterable<TitanGraphIndex> indices = mgmt.getGraphIndexes(titanElementClass);
-        Set<String> result = new HashSet<String>();
+        Set<String> result = new HashSet<>();
         for (TitanGraphIndex index : indices) {
             result.add(index.name());
         }
@@ -293,10 +293,10 @@ public class Titan1Graph implements AtlasGraph<Titan1Vertex, Titan1Edge> {
 
     @Override
     public GremlinGroovyScriptEngine getGremlinScriptEngine() {
-        Set<String> extraImports = new HashSet<String>();
+        Set<String> extraImports = new HashSet<>();
         extraImports.add(java.util.function.Function.class.getName());
 
-        Set<String> extraStaticImports = new HashSet<String>();
+        Set<String> extraStaticImports = new HashSet<>();
         extraStaticImports.add(P.class.getName() + ".*");
         extraStaticImports.add(__.class.getName() + ".*");
         CompilerCustomizerProvider provider = new DefaultImportCustomizerProvider(extraImports, extraStaticImports);
@@ -382,7 +382,7 @@ public class Titan1Graph implements AtlasGraph<Titan1Vertex, Titan1Edge> {
     }
 
     public Iterable<AtlasEdge<Titan1Vertex, Titan1Edge>> wrapEdges(Iterator<Edge> it) {
-        Iterable<Edge> iterable = new IteratorToIterableAdapter<Edge>(it);
+        Iterable<Edge> iterable = new IteratorToIterableAdapter<>(it);
         return wrapEdges(iterable);
     }
 

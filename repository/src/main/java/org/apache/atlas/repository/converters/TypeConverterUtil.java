@@ -204,7 +204,7 @@ public final class TypeConverterUtil {
     }
 
     public static ImmutableList<String> getTypeNames(List<AtlasTypeDefHeader> atlasTypesDefs) {
-        List<String> ret = new ArrayList<String>();
+        List<String> ret = new ArrayList<>();
         if (CollectionUtils.isNotEmpty(atlasTypesDefs)) {
             for (AtlasTypeDefHeader atlasTypesDef : atlasTypesDefs) {
                 ret.add(atlasTypesDef.getName());
@@ -220,7 +220,7 @@ public final class TypeConverterUtil {
     }
 
     private static List<AtlasEnumDef> toAtlasEnumDefs(List<EnumTypeDefinition> enumTypeDefinitions) {
-        List<AtlasEnumDef> ret = new ArrayList<AtlasEnumDef>();
+        List<AtlasEnumDef> ret = new ArrayList<>();
 
         for (EnumTypeDefinition enumType : enumTypeDefinitions) {
             AtlasEnumDef enumDef = new AtlasEnumDef();
@@ -237,11 +237,11 @@ public final class TypeConverterUtil {
 
     private static List<AtlasStructDef> toAtlasStructDefs(List<StructTypeDefinition> structTypeDefinitions)
             throws AtlasBaseException {
-        List<AtlasStructDef> ret = new ArrayList<AtlasStructDef>();
+        List<AtlasStructDef> ret = new ArrayList<>();
 
         for (StructTypeDefinition structType : structTypeDefinitions) {
             AtlasStructDef          structDef = new AtlasStructDef();
-            List<AtlasAttributeDef> attrDefs  = new ArrayList<AtlasAttributeDef>();
+            List<AtlasAttributeDef> attrDefs  = new ArrayList<>();
 
             structDef.setName(structType.typeName);
             structDef.setDescription(structType.typeDescription);
@@ -261,11 +261,11 @@ public final class TypeConverterUtil {
 
     private static List<AtlasClassificationDef> toAtlasClassificationDefs(List<HierarchicalTypeDefinition<TraitType>> traitTypeDefinitions)
             throws AtlasBaseException {
-        List<AtlasClassificationDef> ret = new ArrayList<AtlasClassificationDef>();
+        List<AtlasClassificationDef> ret = new ArrayList<>();
 
         for (HierarchicalTypeDefinition<TraitType> traitType : traitTypeDefinitions) {
             AtlasClassificationDef  classifDef = new AtlasClassificationDef();
-            List<AtlasAttributeDef> attrDefs   = new ArrayList<AtlasAttributeDef>();
+            List<AtlasAttributeDef> attrDefs   = new ArrayList<>();
 
             classifDef.setName(traitType.typeName);
             classifDef.setDescription(traitType.typeDescription);
@@ -286,10 +286,10 @@ public final class TypeConverterUtil {
 
     private static List<AtlasEntityDef> toAtlasEntityDefs(List<HierarchicalTypeDefinition<ClassType>> classTypeDefinitions,
                                                           AtlasTypeRegistry registry) throws AtlasBaseException {
-        List<AtlasEntityDef> atlasEntityDefs = new ArrayList<AtlasEntityDef>();
+        List<AtlasEntityDef> atlasEntityDefs = new ArrayList<>();
 
         for (HierarchicalTypeDefinition<ClassType> classType : classTypeDefinitions) {
-            List<AtlasAttributeDef> attrDefs         = new ArrayList<AtlasAttributeDef>();
+            List<AtlasAttributeDef> attrDefs         = new ArrayList<>();
             AtlasEntityDef          atlasEntityDef   = new AtlasEntityDef();
             String                  classTypeDefName = classType.typeName;
 
@@ -324,7 +324,7 @@ public final class TypeConverterUtil {
     }
 
     private static List<AtlasEnumElementDef> getAtlasEnumElementDefs(EnumValue[] enums) {
-        List<AtlasEnumElementDef> ret = new ArrayList<AtlasEnumElementDef>();
+        List<AtlasEnumElementDef> ret = new ArrayList<>();
 
         for (EnumValue enumElem : enums) {
             ret.add(new AtlasEnumElementDef(enumElem.value, null, enumElem.ordinal));
@@ -334,7 +334,7 @@ public final class TypeConverterUtil {
     }
 
     private static EnumValue[] getEnumValues(List<AtlasEnumElementDef> enumDefs) {
-        List<EnumValue> ret = new ArrayList<EnumValue>();
+        List<EnumValue> ret = new ArrayList<>();
 
         if (CollectionUtils.isNotEmpty(enumDefs)) {
             for (AtlasEnumElementDef enumDef : enumDefs) {

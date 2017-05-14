@@ -38,8 +38,8 @@ import org.apache.atlas.typesystem.types.TypeSystem;
  */
 public class TypeVertexFinder implements TypeVisitor {
 
-    private final List<TypeVertexInfo> toCreate = new ArrayList<TypeVertexInfo>();
-    private final Set<String> typesIncluded = new HashSet<String>();
+    private final List<TypeVertexInfo> toCreate = new ArrayList<>();
+    private final Set<String> typesIncluded = new HashSet<>();
     private final TypeSystem typeSystem;
 
     public TypeVertexFinder(TypeSystem ts) {

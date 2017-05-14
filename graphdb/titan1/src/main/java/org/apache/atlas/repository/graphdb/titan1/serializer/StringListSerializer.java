@@ -35,7 +35,7 @@ public class StringListSerializer implements AttributeSerializer<List<String>> {
     @Override
     public List<String> read(ScanBuffer buffer) {
         int length = (int)VariableLong.readPositive(buffer);
-        List<String> result = new ArrayList<String>(length);
+        List<String> result = new ArrayList<>(length);
         for(int i = 0; i < length; i++) {
             result.add(stringSerializer.read(buffer));
         }

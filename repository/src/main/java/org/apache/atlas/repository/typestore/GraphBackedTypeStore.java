@@ -123,7 +123,7 @@ public class GraphBackedTypeStore implements ITypeStore {
         List<AtlasVertex> vertices = createVertices(typeVerticesNeeded);
 
         //Create a type name->AtlasVertex map with the result
-        Map<String, AtlasVertex> result = new HashMap<String,AtlasVertex>(typeVerticesNeeded.size());
+        Map<String, AtlasVertex> result = new HashMap<>(typeVerticesNeeded.size());
         for(int i = 0 ; i < typeVerticesNeeded.size(); i++) {
             TypeVertexInfo createdVertexInfo = typeVerticesNeeded.get(i);
             AtlasVertex createdVertex = vertices.get(i);

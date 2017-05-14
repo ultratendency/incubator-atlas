@@ -489,7 +489,7 @@ public class ExpandOrsOptimization implements GremlinOptimization {
         if (!updatedChildren.hasChanges()) {
             return Collections.singletonList(source);
         }
-        List<GroovyExpression> result = new ArrayList<GroovyExpression>();
+        List<GroovyExpression> result = new ArrayList<>();
 
         //The updated children list we get back has the possible values for each child
         //in the expression.  We compute a cartesian product to get all possible

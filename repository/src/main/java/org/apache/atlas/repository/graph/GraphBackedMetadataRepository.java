@@ -216,7 +216,7 @@ public class GraphBackedMetadataRepository implements MetadataRepository {
 
         // search for missing entities
         if (instanceVertices.size() != guidsToFetch.size()) {
-            Set<String> missingGuids = new HashSet<String>(guidsToFetch);
+            Set<String> missingGuids = new HashSet<>(guidsToFetch);
             missingGuids.removeAll(instanceVertices.keySet());
             if (!missingGuids.isEmpty()) {
                 if (LOG.isDebugEnabled()) {

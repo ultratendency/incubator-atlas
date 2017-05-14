@@ -76,7 +76,7 @@ public class Titan1Vertex extends Titan1Element<Vertex> implements AtlasVertex<T
     @Override
     public <T> Collection<T> getPropertyValues(String propertyName, Class<T> clazz) {
 
-        Collection<T> result = new ArrayList<T>();
+        Collection<T> result = new ArrayList<>();
         Iterator<VertexProperty<T>> it = getWrappedElement().properties(propertyName);
         while(it.hasNext()) {
             result.add(it.next().value());

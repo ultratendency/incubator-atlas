@@ -1187,7 +1187,7 @@ public class GraphBackedDiscoveryServiceTest extends BaseRepositoryTest {
     }
 
     static class CountOnlyValidator implements ResultChecker {
-        private List<Integer> expectedCounts = new ArrayList<Integer>();
+        private List<Integer> expectedCounts = new ArrayList<>();
         private int countColumn = 0;
 
         public CountOnlyValidator() {
