@@ -31,17 +31,6 @@
     <packaging>jar</packaging>
 
     <dependencies>
-        <!-- Logging -->
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-        </dependency>
-
         <!-- apache atlas core dependencies -->
         <dependency>
             <groupId>org.apache.atlas</groupId>
@@ -181,11 +170,6 @@
                 <inherited>false</inherited>
                 <executions>
                 </executions>
-            </plugin>
-
-            <plugin>
-                <groupId>net.alchim31.maven</groupId>
-                <artifactId>scala-maven-plugin</artifactId>
             </plugin>
         </plugins>
     </build>

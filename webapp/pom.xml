@@ -114,11 +114,6 @@
     <dependencies>
         <dependency>
             <groupId>org.apache.atlas</groupId>
-            <artifactId>atlas-graphdb-impls</artifactId>
-            <type>pom</type>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.atlas</groupId>
             <artifactId>atlas-common</artifactId>
         </dependency>
 
