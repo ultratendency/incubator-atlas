@@ -52,7 +52,20 @@ import org.testng.annotations.Test;
 
 import java.io.File;
 import java.text.ParseException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.SortedMap;
+import java.util.SortedSet;
+import java.util.TreeMap;
+import java.util.TreeSet;
 
 import static org.apache.atlas.AtlasClient.NAME;
 import static org.apache.atlas.hive.hook.HiveHook.IO_SEP;

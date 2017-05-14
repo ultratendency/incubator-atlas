@@ -19,7 +19,16 @@
 package org.apache.atlas.web.resources;
 
 import org.apache.atlas.AtlasException;
-import org.apache.atlas.catalog.*;
+import org.apache.atlas.catalog.AtlasTypeSystem;
+import org.apache.atlas.catalog.CollectionRequest;
+import org.apache.atlas.catalog.DefaultTypeSystem;
+import org.apache.atlas.catalog.InstanceRequest;
+import org.apache.atlas.catalog.Request;
+import org.apache.atlas.catalog.ResourceProvider;
+import org.apache.atlas.catalog.Result;
+import org.apache.atlas.catalog.TaxonomyResourceProvider;
+import org.apache.atlas.catalog.TermPath;
+import org.apache.atlas.catalog.TermResourceProvider;
 import org.apache.atlas.catalog.exception.CatalogException;
 import org.apache.atlas.catalog.exception.InvalidPayloadException;
 import org.apache.atlas.exception.AtlasBaseException;

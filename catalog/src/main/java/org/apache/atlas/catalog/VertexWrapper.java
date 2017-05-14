@@ -22,7 +22,12 @@ import com.tinkerpop.blueprints.Vertex;
 import org.apache.atlas.catalog.definition.ResourceDefinition;
 import org.apache.atlas.repository.Constants;
 
-import java.util.*;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
+import java.util.TreeSet;
 
 /**
  * Wrapper for vertices which provides additional information.

@@ -18,7 +18,11 @@
 
 package org.apache.atlas.catalog;
 
-import org.apache.atlas.catalog.exception.*;
+import org.apache.atlas.catalog.exception.CatalogException;
+import org.apache.atlas.catalog.exception.InvalidPayloadException;
+import org.apache.atlas.catalog.exception.InvalidQueryException;
+import org.apache.atlas.catalog.exception.ResourceAlreadyExistsException;
+import org.apache.atlas.catalog.exception.ResourceNotFoundException;
 
 import java.util.Collection;
 

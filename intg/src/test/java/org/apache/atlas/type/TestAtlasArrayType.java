@@ -22,10 +22,17 @@ import org.testng.annotations.Test;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
-import static org.testng.Assert.*;
-
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertFalse;
+import static org.testng.Assert.assertNotNull;
+import static org.testng.Assert.assertNull;
+import static org.testng.Assert.assertTrue;
 
 public class TestAtlasArrayType {
     private final AtlasArrayType intArrayType  = new AtlasArrayType(new AtlasIntType());

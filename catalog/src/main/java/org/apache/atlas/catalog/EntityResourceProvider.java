@@ -19,10 +19,15 @@
 package org.apache.atlas.catalog;
 
 import org.apache.atlas.catalog.definition.EntityResourceDefinition;
-import org.apache.atlas.catalog.exception.*;
+import org.apache.atlas.catalog.exception.CatalogRuntimeException;
+import org.apache.atlas.catalog.exception.InvalidPayloadException;
+import org.apache.atlas.catalog.exception.InvalidQueryException;
+import org.apache.atlas.catalog.exception.ResourceAlreadyExistsException;
+import org.apache.atlas.catalog.exception.ResourceNotFoundException;
 import org.apache.atlas.catalog.query.AtlasQuery;
 
-import java.util.*;
+import java.util.Collection;
+import java.util.Map;
 
 /**
  * Provider for entity resources.

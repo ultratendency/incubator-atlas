@@ -27,7 +27,12 @@ import org.apache.atlas.catalog.projection.Relation;
 import org.apache.atlas.typesystem.types.AttributeDefinition;
 import org.testng.annotations.Test;
 
-import java.util.*;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNull;

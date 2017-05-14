@@ -28,7 +28,9 @@ import org.apache.atlas.catalog.definition.ResourceDefinition;
 import org.apache.atlas.catalog.projection.ProjectionResult;
 import org.apache.atlas.catalog.projection.Relation;
 
-import java.util.*;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.Map;
 
 /**
  * Query expression wrapper which handles projection queries.

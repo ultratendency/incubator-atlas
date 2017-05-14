@@ -29,7 +29,10 @@ import org.apache.atlas.catalog.projection.ProjectionResult;
 import org.apache.atlas.typesystem.types.DataTypes;
 import org.apache.atlas.typesystem.types.utils.TypesUtil;
 
-import java.util.*;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Taxonomy resource definition.

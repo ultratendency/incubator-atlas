@@ -23,7 +23,11 @@ import org.testng.annotations.Test;
 import javax.ws.rs.core.UriInfo;
 
 import java.net.URI;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Map;
+import java.util.TreeMap;
 
 import static org.easymock.EasyMock.createStrictMock;
 import static org.easymock.EasyMock.expect;

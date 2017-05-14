@@ -25,7 +25,10 @@ import org.apache.atlas.catalog.definition.ResourceDefinition;
 import org.apache.lucene.search.BooleanClause;
 import org.apache.lucene.search.BooleanQuery;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Expression where operands are other expressions and operator is logical AND or OR

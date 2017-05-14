@@ -22,7 +22,13 @@ import com.tinkerpop.pipes.PipeFunction;
 import com.tinkerpop.pipes.transform.TransformFunctionPipe;
 import org.apache.atlas.catalog.Request;
 import org.apache.atlas.catalog.exception.InvalidPayloadException;
-import org.apache.atlas.catalog.projection.*;
+import org.apache.atlas.catalog.projection.GenericRelation;
+import org.apache.atlas.catalog.projection.Projection;
+import org.apache.atlas.catalog.projection.ProjectionResult;
+import org.apache.atlas.catalog.projection.Relation;
+import org.apache.atlas.catalog.projection.RelationProjection;
+import org.apache.atlas.catalog.projection.TagRelation;
+import org.apache.atlas.catalog.projection.TraitRelation;
 
 import java.util.Arrays;
 import java.util.Collection;

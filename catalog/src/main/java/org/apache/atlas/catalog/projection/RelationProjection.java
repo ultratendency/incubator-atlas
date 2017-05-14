@@ -23,7 +23,10 @@ import com.tinkerpop.pipes.transform.TransformFunctionPipe;
 import org.apache.atlas.catalog.ResourceComparator;
 import org.apache.atlas.catalog.VertexWrapper;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Map;
+import java.util.TreeMap;
 
 /**
  * Projection based on a relation.

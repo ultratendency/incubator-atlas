@@ -28,10 +28,13 @@ import org.apache.atlas.catalog.exception.InvalidPayloadException;
 import org.apache.atlas.catalog.projection.Projection;
 import org.apache.atlas.catalog.projection.ProjectionResult;
 import org.apache.atlas.repository.Constants;
-import org.apache.atlas.typesystem.types.*;
+import org.apache.atlas.typesystem.types.DataTypes;
 import org.apache.atlas.typesystem.types.utils.TypesUtil;
 
-import java.util.*;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Map;
+import java.util.TreeMap;
 
 /**
  * Term resource definition.

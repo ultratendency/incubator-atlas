@@ -17,8 +17,6 @@
  */
 package org.apache.atlas.type;
 
-import java.util.*;
-
 import org.apache.atlas.exception.AtlasBaseException;
 import org.apache.atlas.model.ModelTestUtil;
 import org.apache.atlas.model.instance.AtlasClassification;
@@ -26,8 +24,17 @@ import org.apache.atlas.model.typedef.AtlasBaseTypeDef;
 import org.apache.atlas.model.typedef.AtlasClassificationDef;
 import org.testng.annotations.Test;
 
-import static org.testng.Assert.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
 
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertFalse;
+import static org.testng.Assert.assertNotNull;
+import static org.testng.Assert.assertNull;
+import static org.testng.Assert.assertTrue;
 
 public class TestAtlasClassificationType {
     private final AtlasClassificationType classificationType;

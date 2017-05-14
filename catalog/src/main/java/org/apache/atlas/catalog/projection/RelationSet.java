@@ -20,7 +20,8 @@ package org.apache.atlas.catalog.projection;
 
 import org.apache.atlas.catalog.VertexWrapper;
 
-import java.util.*;
+import java.util.Collection;
+import java.util.Collections;
 
 /**
  * Encapsulates the response of a relation traversal.

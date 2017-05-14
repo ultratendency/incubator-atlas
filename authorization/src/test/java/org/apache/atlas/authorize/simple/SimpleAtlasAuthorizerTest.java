@@ -22,7 +22,11 @@ import java.util.List;
 import java.util.Set;
 import java.util.Map;
 
-import org.apache.atlas.authorize.*;
+import org.apache.atlas.authorize.AtlasAccessRequest;
+import org.apache.atlas.authorize.AtlasActionTypes;
+import org.apache.atlas.authorize.AtlasAuthorizationException;
+import org.apache.atlas.authorize.AtlasAuthorizerFactory;
+import org.apache.atlas.authorize.AtlasResourceTypes;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.AssertJUnit;

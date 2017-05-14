@@ -19,10 +19,18 @@
 package org.apache.atlas.catalog;
 
 import org.apache.atlas.catalog.definition.EntityTagResourceDefinition;
-import org.apache.atlas.catalog.exception.*;
+import org.apache.atlas.catalog.exception.CatalogRuntimeException;
+import org.apache.atlas.catalog.exception.InvalidPayloadException;
+import org.apache.atlas.catalog.exception.InvalidQueryException;
+import org.apache.atlas.catalog.exception.ResourceAlreadyExistsException;
+import org.apache.atlas.catalog.exception.ResourceNotFoundException;
 import org.apache.atlas.catalog.query.AtlasQuery;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Provider for entity tag resources.

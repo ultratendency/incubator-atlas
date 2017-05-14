@@ -19,7 +19,11 @@
 package org.apache.atlas.catalog.definition;
 
 import org.apache.atlas.AtlasException;
-import org.apache.atlas.catalog.*;
+import org.apache.atlas.catalog.DefaultDateFormatter;
+import org.apache.atlas.catalog.DefaultPropertyMapper;
+import org.apache.atlas.catalog.PropertyMapper;
+import org.apache.atlas.catalog.PropertyValueFormatter;
+import org.apache.atlas.catalog.Request;
 import org.apache.atlas.catalog.exception.CatalogRuntimeException;
 import org.apache.atlas.catalog.exception.InvalidPayloadException;
 import org.apache.atlas.catalog.projection.Projection;
@@ -29,7 +33,13 @@ import org.apache.atlas.typesystem.types.AttributeInfo;
 import org.apache.atlas.typesystem.types.Multiplicity;
 import org.apache.atlas.typesystem.types.TypeSystem;
 
-import java.util.*;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * Base class for resource definitions.
