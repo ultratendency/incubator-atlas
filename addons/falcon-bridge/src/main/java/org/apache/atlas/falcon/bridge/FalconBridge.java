@@ -181,7 +181,7 @@ public class FalconBridge {
                 }
             }
 
-            if (!replicationInputs.isEmpty() && !replicationInputs.isEmpty()) {
+            if (!replicationInputs.isEmpty()) {
                 Referenceable feedReplicationEntity = new Referenceable(FalconDataTypes
                         .FALCON_FEED_REPLICATION.getName());
 

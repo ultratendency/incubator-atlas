@@ -158,12 +158,11 @@ public class FalconHook extends AtlasHook implements FalconEventPublisher {
         Operation op = getOperation(event.getOperation());
         String user = getUser(event.getUser());
         LOG.info("fireAndForget user:{}", user);
-        switch (op) {
-        case ADD:
-            messages.add(new HookNotification.EntityCreateRequest(user, createEntities(event, user)));
-            break;
 
+        if (op == Operation.ADD) {
+            messages.add(new HookNotification.EntityCreateRequest(user, createEntities(event, user)));
         }
+
         notifyEntities(messages);
     }
 
